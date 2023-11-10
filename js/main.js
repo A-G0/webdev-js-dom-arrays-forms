@@ -5,10 +5,3 @@ document.getElementById("myHeading").innerHTML = "Abdusalam";
 
   // code ends here
 })();
-
-
-
-
-
-
-
