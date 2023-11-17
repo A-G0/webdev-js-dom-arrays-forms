@@ -20,6 +20,5 @@ document
       document.querySelector(".reset").addEventListener('click', function(ev){
         document.querySelector('body').removeAttribute('class');
         })
-       
 // code ends here
 })();
