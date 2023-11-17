@@ -8,17 +8,15 @@ document
 .querySelector("nav ul li a")
 .setAttribute("href", "https://www.google.co.uk/");
  // adding events
- document.querySelector(".red").addEventListener('click', function(ev){
-  document.querySelector('body').setAttribute('class', "redBack");
-  })
-  document.querySelector(".blue").addEventListener('click', function(ev){
-    document.querySelector('body').setAttribute('class', "blueBack");
-    })
-    document.querySelector(".green").addEventListener('click', function(ev){
-      document.querySelector('body').setAttribute('class', "greenBack");
-      })
-      document.querySelector(".reset").addEventListener('click', function(ev){
-        document.querySelector('body').removeAttribute('class');
-        })
+ let colourButtons = document.querySelectorAll(".colPicker")
+console.dir(colourButtons)
+for(let i=0; i < colourButtons.length; i++){
+  colourButtons[i].addEventListener("click", chgColour)
+ }
+ function chgColour(ev){
+  console.dir(ev.target.classList);
+  let colourPicked = ev.target.classlist[0] + "Back";
+  bodyElement.setAttribute("class", colourPicked);
+ }
 // code ends here
 })();
