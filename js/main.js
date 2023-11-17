@@ -7,7 +7,8 @@ document.querySelector("nav ul li").setAttribute("class", "currentPage");
 document
 .querySelector("nav ul li a")
 .setAttribute("href", "https://www.google.co.uk/");
- 
+ // adding events
+ document.querySelector(".red").addEventListener 
 
 // code ends here
 })();
